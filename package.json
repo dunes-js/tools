@@ -1,6 +1,6 @@
 {
   "name": "@dunes/tools",
-  "version": "0.9.94",
+  "version": "0.9.95",
   "type": "module",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -9,6 +9,53 @@
   "scripts": {
     "build": "rm -rf lib && tsc && npm version patch",
     "test": "ts-node test"
+  },
+  "exports": {
+    ".": {
+      "main": "./lib/index.js",
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./array": {
+      "main": "./lib/array/index.js",
+      "import": "./lib/array/index.js",
+      "types": "./lib/array/index.d.ts"
+    },
+    "./bool": {
+      "main": "./lib/bool/index.js",
+      "import": "./lib/bool/index.js",
+      "types": "./lib/bool/index.d.ts"
+    },
+    "./obj": {
+      "main": "./lib/obj/index.js",
+      "import": "./lib/obj/index.js",
+      "types": "./lib/obj/index.d.ts"
+    },
+    "./random": {
+      "main": "./lib/random/index.js",
+      "import": "./lib/random/index.js",
+      "types": "./lib/random/index.d.ts"
+    },
+    "./regexp": {
+      "main": "./lib/regexp/index.js",
+      "import": "./lib/regexp/index.js",
+      "types": "./lib/regexp/index.d.ts"
+    },
+    "./str": {
+      "main": "./lib/str/index.js",
+      "import": "./lib/str/index.js",
+      "types": "./lib/str/index.d.ts"
+    },
+    "./unicode": {
+      "main": "./lib/unicode/index.js",
+      "import": "./lib/unicode/index.js",
+      "types": "./lib/unicode/index.d.ts"
+    },
+    "./extra": {
+      "main": "./lib/extra.js",
+      "import": "./lib/extra.js",
+      "types": "./lib/extra.d.ts"
+    }
   },
   "keywords": [
     "javascript",
