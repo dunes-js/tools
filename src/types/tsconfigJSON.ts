@@ -106,7 +106,9 @@ export interface TsConfig {
     /**
      * Specify a set of entries that re-map imports to additional lookup locations. 
      * */
-    paths?: {},                                      
+    paths?: {
+      [key: string]: string[]
+    },                                      
     /**
      * Allow multiple folders to be treated as one when resolving modules. 
      * */
@@ -168,7 +170,7 @@ export interface TsConfig {
     /**
      * Specify the maximum folder depth used for checking JavaScript files from 'node_modules'. Only applicable with 'allowJs'. 
      * */
-    maxNodeModuleJsDepth?: 1,                        
+    maxNodeModuleJsDepth?: number                        
 
     /* Emit */
     /**
