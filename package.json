@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "typings": "./lib/index.d.ts",
+  "import": "./lib/index.js",
   "scripts": {
     "build": "rm -rf lib && tsc && npm version patch",
     "test": "ts-node test"
@@ -45,6 +45,11 @@
       "main": "./lib/str/index.js",
       "import": "./lib/str/index.js",
       "types": "./lib/str/index.d.ts"
+    },
+    "./fix": {
+      "main": "./lib/fix/index.js",
+      "import": "./lib/fix/index.js",
+      "types": "./lib/fix/index.d.ts"
     },
     "./unicode": {
       "main": "./lib/unicode/index.js",
