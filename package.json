@@ -60,6 +60,21 @@
       "main": "./lib/extra.js",
       "import": "./lib/extra.js",
       "types": "./lib/extra.d.ts"
+    },
+    "./types": {
+      "main": "./lib/types/index.js",
+      "import": "./lib/types/index.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "./types/pack": {
+      "main": "./lib/types/packageJSON.js",
+      "import": "./lib/types/packageJSON.js",
+      "types": "./lib/types/packageJSON.d.ts"
+    },
+    "./types/tsc": {
+      "main": "./lib/types/tsconfigJSON.js",
+      "import": "./lib/types/tsconfigJSON.js",
+      "types": "./lib/types/tsconfigJSON.d.ts"
     }
   },
   "keywords": [
