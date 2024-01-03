@@ -32,7 +32,6 @@ export type TupOf<T, N extends number, R extends unknown[] >= (
   : TupOf<T, N, [T, ...R]>
 )
 
-export type Many<T> = T | T[]
 
 export type TupleFromInterface<T, K extends Array<keyof T>> = { [I in keyof K]: Lookup<T, K[I]> }
 
