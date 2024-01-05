@@ -3,6 +3,7 @@ export * from "./slugify.js"
 export * from "./Stringify/index.js"
 export * from "./transform.js"
 export * from "./types.js"
+export * from "./startZero.js"
 
 
 export function splitLast(str: string, at: string, off = 1): [string, string | undefined] {
