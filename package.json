@@ -1,6 +1,6 @@
 {
   "name": "@dunes/tools",
-  "version": "0.9.104",
+  "version": "0.9.105",
   "type": "module",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -45,6 +45,11 @@
       "main": "./lib/str/index.js",
       "import": "./lib/str/index.js",
       "types": "./lib/str/index.d.ts"
+    },
+    "./num": {
+      "main": "./lib/num/index.js",
+      "import": "./lib/num/index.js",
+      "types": "./lib/num/index.d.ts"
     },
     "./fix": {
       "main": "./lib/fix/index.js",
