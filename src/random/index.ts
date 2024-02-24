@@ -3,8 +3,14 @@ import { repeat } from "../array/index.js";
 export class Random {
   static readonly ABC = "abcdefghijklmnopqrstuvwxyz";
 
+  static float(from: number, to: number) {
+    return Math.random() * (from - to) + to;
+  }
+
   static int(from: number, to: number) {
-    return Math.floor(Math.random() * to) + from
+    from = Math.ceil(from);
+    to = Math.floor(to);
+    return Math.floor(Math.random() * (to - from + 1)) + from;
   }
 }
 
