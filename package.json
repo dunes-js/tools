@@ -90,7 +90,7 @@
   "author": "Omar <omarfkuri@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/omarfkuri/dunes.git"
+    "url": "git://github.com/dunests/tools.git"
   },
   "dependencies": {
     "@types/node": "^20.8.6"
